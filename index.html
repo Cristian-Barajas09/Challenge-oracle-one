@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es-419">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./image/Logo-2.png" type="image/x-icon">
+    <title>Challenge Alura</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="cabecera">
+            <img src="./image/Logo-2.png" alt="">
+        </h1>
+    </header>
+    <main>
+        <section class="entrada">
+            <div class="input">
+                <textarea placeholder="Ingrese el texto aqui" id="input" rows="14"></textarea>
+            </div>
+            <div class="btn">
+                <p><img src="./image/bi_exclamation-circle-fill.png" alt=""> solo letras minusculas y sin acentos</p>
+                <button type="button" id="encriptar">Encriptar</button>
+                <button type="button" id="desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section class="salida">
+            <div class="content" id="content">
+                <img src="./image/Muñeco.png" alt="">
+                <div class="content">
+                    <h3 class="titulo-principal">Ningun mensaje fue encontrado</h3>
+                    <p>ingrese un texto que desees encriptar o desencriptar</p>
+                </div>
+            </div>
+            <div class="caja-salida" id="caja-salida">
+                <p id="salida" ></p>
+                <button type="button" id="copiar">copiar</button>
+            </div>
+        </section>
+
+        <div class="alert-message" style="display: none;" id="alert-message">
+            <div>
+                <button type="button" id="close-button" title="close alert">
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-xbox-x" 
+                    width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 21a9 9 0 0 0 9 -9a9 9 0 0 0 -9 -9a9 9 0 0 0 -9 9a9 9 0 0 0 9 9z" />
+                        <path d="M9 8l6 8" />
+                        <path d="M15 8l-6 8" />
+                    </svg>
+                </button>
+                <p id="text-alert"></p>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="./js/index.js" type="module"></script>
+</body>
+
+</html>
